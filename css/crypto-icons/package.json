@@ -1,0 +1,65 @@
+{
+  "_from": "crypto-icons@^1.0.10",
+  "_id": "crypto-icons@1.0.18",
+  "_inBundle": false,
+  "_integrity": "sha512-GAgXzKqwDhNuJEahNsE0AVzHnhIqTAo7krdJaEbDtgBJjMn8UvJmeUS/1gHnUEN6YJg5wADmjWmXwrwgXvot+A==",
+  "_location": "/crypto-icons",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "crypto-icons@^1.0.10",
+    "name": "crypto-icons",
+    "escapedName": "crypto-icons",
+    "rawSpec": "^1.0.10",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.10"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/crypto-icons/-/crypto-icons-1.0.18.tgz",
+  "_shasum": "deb1a9d5c349553ddf5808282f58186d80b6fede",
+  "_spec": "crypto-icons@^1.0.10",
+  "_where": "/Users/yograterol/projects/opensource/etherwallet",
+  "author": {
+    "name": "Guarda co"
+  },
+  "bugs": {
+    "url": "https://github.com/guardaco/crypto-icons/issues",
+    "email": "hello@guarda.co"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Din Tores",
+      "email": "dt@guarda.co",
+      "url": "https://github.com/dintores"
+    }
+  ],
+  "deprecated": false,
+  "description": "Guarda is glad to present our set of icons for various cryptocurrencies and tokens that can be downloaded and used completely for free.",
+  "devDependencies": {
+    "stylelint": "^9.4.0",
+    "stylelint-config-standard": "^18.2.0"
+  },
+  "homepage": "https://guarda.co/",
+  "keywords": [
+    "cryptocurrencies",
+    "icons",
+    "svg",
+    "svg-icons"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "crypto-icons",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guardaco/crypto-icons.git"
+  },
+  "scripts": {
+    "lint": "stylelint *.css"
+  },
+  "version": "1.0.18"
+}
