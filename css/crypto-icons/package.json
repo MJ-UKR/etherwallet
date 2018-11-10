@@ -1,8 +1,8 @@
 {
   "_from": "crypto-icons@^1.0.10",
-  "_id": "crypto-icons@1.0.18",
+  "_id": "crypto-icons@1.0.21",
   "_inBundle": false,
-  "_integrity": "sha512-GAgXzKqwDhNuJEahNsE0AVzHnhIqTAo7krdJaEbDtgBJjMn8UvJmeUS/1gHnUEN6YJg5wADmjWmXwrwgXvot+A==",
+  "_integrity": "sha512-KPGxeugqw2hK7LO7xnh2bIkaCJrAcILZm15mITZ6mZ0pu+akKTomFhdglRQZi/NkCPpmWT4xCLPWdsX+34gIQA==",
   "_location": "/crypto-icons",
   "_phantomChildren": {},
   "_requested": {
@@ -18,10 +18,10 @@
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/crypto-icons/-/crypto-icons-1.0.18.tgz",
-  "_shasum": "deb1a9d5c349553ddf5808282f58186d80b6fede",
+  "_resolved": "https://registry.npmjs.org/crypto-icons/-/crypto-icons-1.0.21.tgz",
+  "_shasum": "7101ff3e20f0f75d8e0feefa1df70b6cfbcfe18a",
   "_spec": "crypto-icons@^1.0.10",
-  "_where": "/Users/yograterol/projects/opensource/etherwallet",
+  "_where": "/Users/yograterol/projects/etherwallet",
   "author": {
     "name": "Guarda co"
   },
@@ -61,5 +61,5 @@
   "scripts": {
     "lint": "stylelint *.css"
   },
-  "version": "1.0.18"
+  "version": "1.0.21"
 }

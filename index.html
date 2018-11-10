@@ -71,7 +71,7 @@
     <section class="bg-gradient header-branding">
         <section class="container">
             
-            <a class="brand" href="https://ethereumproject.github.io/etherwallet/" aria-label="Go to homepage">
+            <a class="brand" href="/" aria-label="Go to homepage">
                 <img src="images/logo-myetherwallet.png" height="64px" width="245px" alt="ClassicEtherWallet"/>
             </a>
             
@@ -630,7 +630,7 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
 
 
-                    <div ng-if="coldStakingService.contract.staker_info.weight > 0" class="alert alert-danger">
+                    <div ng-if="coldStakingService.stakingInfo.amount > 0" class="alert alert-danger">
                         <h2> WARNING!</h2>
                         <p translate="COLD_STAKING_START_STAKING_WARNING">
                             You already have funds in staking contract.
@@ -682,9 +682,8 @@
                                class="form-control"
                                required
                                autocomplete="off"
-
                                placeholder="{{ajaxReq.type}}"
-                               ng-class="coldStakingService.valid_staking_tx(tx.value) ? 'is-valid' : 'is-invalid'"
+                               ng-class="coldStakingService.validStakingTx(tx.value) ? 'is-valid' : 'is-invalid'"
                         >
 
                     </div>
@@ -714,7 +713,7 @@
 
                     <p translate="COLD_STAKING_LOCKED_WARNING">
 
-                        Your funds will be locked for 27 days and you will be unable 
+                        Your funds will be locked for 27 days and you will be unable
                         to withdraw within the locking period
 
                     </p>
@@ -738,7 +737,7 @@
                         No, get me out of here!
                     </button>
                     <button
-                        ng-disabled="coldStakingService.contract.staker_info.weight > 0 && !input.understand"
+                        ng-disabled="coldStakingService.stakingInfo.amount > 0 && !input.understand"
                         type="submit"
                         class="btn btn-primary" translate="SENDModal_Yes">
                         Yes, I am sure! Make transaction.
@@ -754,12 +753,10 @@
                 <article class="modal fade" id="openWithdrawModal" tabindex="-1"
 >
     <section class="modal-dialog">
-        <form ng-submit="claim_and_withdraw()">
+        <form ng-submit="withdraw_stake()">
             <section class="modal-content"
                      ng-if="coldStakingService.validNetwork()"
-
             >
-
                 <div class="modal-body">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
 
@@ -770,13 +767,13 @@
                         </h1>
                         Withdraw is impossible
                         stake time < round interval
-                        ({{coldStakingService.contract.staker_info.stake_time | number}} <
+                        ({{coldStakingService.stakingInfo.time | number}} <
                         {{coldStakingService.contract.round_interval | number}})
                     </div>
 
 
                     <div class="alert alert-danger"
-                         ng-if="coldStakingService.userCanWithdraw() && coldStakingService.contract.staker_info.reward === 0"
+                         ng-if="coldStakingService.userCanWithdraw() && coldStakingService.stakingInfo.amount === 0"
                     >
                         <h1>WARNING!
                         </h1>
@@ -784,12 +781,20 @@
                     </div>
 
 
-                    <h2 class="modal-title">You are about to <b>withdraw {{ajaxReq.type}} from Cold Staking:</b></h2>
+                    <h2 class="modal-title">You are about to <b>withdraw
+
+                        <coin-icon icon="{{ajaxReq.type.toLowerCase()}}" hidetext="{{true}}">
+
+                        </coin-icon>
+                        {{coldStakingService.stakingInfo.amount || 0 | number}}
+                        {{ajaxReq.type}}
+
+                        from Cold Staking:</b></h2>
 
                     <h5>You will withdraw from the staking contract:
                         <a
-                                target="_blank"
-                                href="{{ajaxReq.blockExplorerAddr.replace('[[address]]', coldStakingService.contract.address)}}"
+                            target="_blank"
+                            href="{{ajaxReq.blockExplorerAddr.replace('[[address]]', coldStakingService.contract.address)}}"
                         >
                             {{coldStakingService.contract.address}}
                         </a>
@@ -809,14 +814,18 @@
                         <div class="col-xs-4 text-center">
                             - >
                             <br/>
-                            {{tx.value || 0}} {{ajaxReq.type}}
+                            {{tx.value || 0}}
+                            <coin-icon icon="{{ajaxReq.type.toLowerCase()}}" hidetext="{{true}}">
+
+                            </coin-icon>
+                            {{ajaxReq.type}}
                         </div>
 
 
                         <div class="col-xs-4">
 
                             <div class="addressIdenticon med" title="Address Indenticon"
-                                 blockie-address="{{walletService.wallet.getAddressString()}}"
+                                 blockie-address="{{walletService.wallet.getChecksumAddressString()}}"
                                  watch-var="walletService.wallet.getAddressString()">
 
                             </div>
@@ -832,9 +841,9 @@
                     </button>
                     <button
 
-                            ng-disabled="!coldStakingService.userCanWithdraw();"
-                            type="submit"
-                            class="btn btn-primary" translate="SENDModal_Yes">
+                        ng-disabled="!coldStakingService.userCanWithdraw();"
+                        type="submit"
+                        class="btn btn-primary" translate="SENDModal_Yes">
                         Yes, I am sure! Make transaction.
                     </button>
                 </div>
@@ -857,16 +866,15 @@
                 <div class="modal-body">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
 
-                    <div class="alert alert-danger" ng-if="coldStakingService.contract.staker_info.reward === 0">
+                    <div class="alert alert-danger" ng-if="coldStakingService.stakingInfo.amount === 0">
                         <h1>WARNING!</h1>
                         <p translate="COLD_STAKING_NO_WITHDRAW">
                             You do not have any deposit to withdraw.
                         </p>
                     </div>
 
-
                     <h2 class="modal-title">You are about to claim <b> Reward
-                        {{coldStakingService.contract.stake_balance || 0}}
+                        {{coldStakingService.stakingInfo.reward || 0 | number}}
                         {{ajaxReq.type}}</b>
                     </h2>
 
@@ -919,7 +927,7 @@
                         No, get me out of here!
                     </button>
                     <button
-                            ng-disabled="!coldStakingService.contract.staker_info.reward"
+                            ng-disabled="!coldStakingService.stakingInfo.amount"
 
                             type="submit"
                             class="btn btn-primary" translate="SENDModal_Yes">
