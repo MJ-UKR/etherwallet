@@ -2,7 +2,7 @@
   "_args": [
     [
       "crypto-icons@1.0.23",
-      "/Users/yograterol/projects/opensource/CEW-CLO"
+      "/Users/yohangraterol/projects/callisto/ClassicEtherWallet"
     ]
   ],
   "_development": true,
@@ -27,7 +27,7 @@
   ],
   "_resolved": "https://registry.npmjs.org/crypto-icons/-/crypto-icons-1.0.23.tgz",
   "_spec": "1.0.23",
-  "_where": "/Users/yograterol/projects/opensource/CEW-CLO",
+  "_where": "/Users/yohangraterol/projects/callisto/ClassicEtherWallet",
   "author": {
     "name": "Guarda co"
   },
