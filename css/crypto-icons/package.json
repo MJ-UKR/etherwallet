@@ -1,32 +1,26 @@
 {
-  "_args": [
-    [
-      "crypto-icons@1.0.23",
-      "/Users/yohangraterol/projects/callisto/ClassicEtherWallet"
-    ]
-  ],
-  "_development": true,
-  "_from": "crypto-icons@1.0.23",
-  "_id": "crypto-icons@1.0.23",
+  "_from": "crypto-icons@^1.0.10",
+  "_id": "crypto-icons@1.0.35",
   "_inBundle": false,
-  "_integrity": "sha512-2HxxVXruJXjK/a2IpDuchsV1UHTCypNN8ONfMZ+cT8s5ZxmnNo51/iSd+8PdodPGHL86kVIgYD2RQJEt/jEazA==",
+  "_integrity": "sha512-DE24vrspqYEZNREjuJckCkxCVK/XOZgogAPVve9kX/fERspMQ+rGQL2voaEj7irNsKrcsr7gUumt+Aut2luWtg==",
   "_location": "/crypto-icons",
   "_phantomChildren": {},
   "_requested": {
-    "type": "version",
+    "type": "range",
     "registry": true,
-    "raw": "crypto-icons@1.0.23",
+    "raw": "crypto-icons@^1.0.10",
     "name": "crypto-icons",
     "escapedName": "crypto-icons",
-    "rawSpec": "1.0.23",
+    "rawSpec": "^1.0.10",
     "saveSpec": null,
-    "fetchSpec": "1.0.23"
+    "fetchSpec": "^1.0.10"
   },
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/crypto-icons/-/crypto-icons-1.0.23.tgz",
-  "_spec": "1.0.23",
+  "_resolved": "https://registry.npmjs.org/crypto-icons/-/crypto-icons-1.0.35.tgz",
+  "_shasum": "32fd681c9446fedeef95e2c1a7cf0ca1a37a950b",
+  "_spec": "crypto-icons@^1.0.10",
   "_where": "/Users/yohangraterol/projects/callisto/ClassicEtherWallet",
   "author": {
     "name": "Guarda co"
@@ -35,6 +29,7 @@
     "url": "https://github.com/guardaco/crypto-icons/issues",
     "email": "hello@guarda.co"
   },
+  "bundleDependencies": false,
   "contributors": [
     {
       "name": "Din Tores",
@@ -42,10 +37,11 @@
       "url": "https://github.com/dintores"
     }
   ],
+  "deprecated": false,
   "description": "Guarda is glad to present our set of icons for various cryptocurrencies and tokens that can be downloaded and used completely for free.",
   "devDependencies": {
-    "stylelint": "^9.4.0",
-    "stylelint-config-standard": "^18.2.0"
+    "stylelint": "10.0.1",
+    "stylelint-config-standard": "18.3.0"
   },
   "homepage": "https://guarda.co/",
   "keywords": [
@@ -65,5 +61,5 @@
   "scripts": {
     "lint": "stylelint *.css"
   },
-  "version": "1.0.23"
+  "version": "1.0.35"
 }
