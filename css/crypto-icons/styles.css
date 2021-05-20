@@ -1,167 +1,3 @@
-.icon-byts::before {
-  content: "\ea34";
-}
-
-.icon-stash::before {
-  content: "\ea35";
-}
-
-.icon-hex::before {
-  content: "\ea36";
-}
-
-.icon-crm::before {
-  content: "\ea33";
-}
-
-.icon-fio::before {
-  content: "\ea32";
-}
-
-.icon-nut::before {
-  content: "\ea30";
-}
-
-.icon-eosdt::before {
-  content: "\ea31";
-}
-
-.icon-ong::before {
-  content: "\ea2f";
-}
-
-.icon-busd::before {
-  content: "\ea2c";
-}
-
-.icon-iq::before {
-  content: "\ea2d";
-}
-
-.icon-lst::before {
-  content: "\ea2e";
-}
-
-.icon-gas::before {
-  content: "\ea2b";
-}
-
-.icon-xns::before {
-  content: "\ea22";
-}
-
-.icon-pyn::before {
-  content: "\ea23";
-}
-
-.icon-ncash::before {
-  content: "\ea24";
-}
-
-.icon-loki::before {
-  content: "\ea25";
-}
-
-.icon-knc::before {
-  content: "\ea26";
-}
-
-.icon-job::before {
-  content: "\ea27";
-}
-
-.icon-chz::before {
-  content: "\ea28";
-}
-
-.icon-btu::before {
-  content: "\ea29";
-}
-
-.icon-apis::before {
-  content: "\ea2a";
-}
-
-.icon-rvn::before {
-  content: "\ea21";
-}
-
-.icon-enj::before {
-  content: "\ea20";
-}
-
-.icon-iotx::before {
-  content: "\ea1f";
-}
-
-.icon-ethplo::before {
-  content: "\ea1e";
-}
-
-.icon-aya::before {
-  content: "\ea1d";
-}
-
-.icon-yec::before {
-  content: "\ea1c";
-}
-
-.icon-ankr::before {
-  content: "\ea16";
-}
-
-.icon-erd::before {
-  content: "\ea17";
-}
-
-.icon-ftm::before {
-  content: "\ea18";
-}
-
-.icon-lto::before {
-  content: "\ea19";
-}
-
-.icon-und::before {
-  content: "\ea1a";
-}
-
-.icon-vrab::before {
-  content: "\ea1b";
-}
-
-.icon-atom::before {
-  content: "\ea15";
-}
-
-.icon-bnbmainnet::before {
-  content: "\e912";
-}
-
-.icon-eth-ropsten::before {
-  content: "\e931";
-}
-
-.icon-ropsten::before {
-  content: "\e931";
-}
-
-.icon-btc-testnet::before {
-  content: "\e918";
-}
-
-.icon-now-e68::before {
-  content: "\e9f8";
-}
-
-.icon-awc-986::before {
-  content: "\e946";
-}
-
-.icon-awc::before {
-  content: "\e946";
-}
-
 .icon-ont::before {
   content: "\ea14";
 }
@@ -235,7 +71,7 @@
 }
 
 .icon-dai::before {
-  content: "\ea0d";
+  content: "\ea03";
 }
 
 .icon-pax::before {
@@ -1230,10 +1066,6 @@
   content: "\e9b2";
 }
 
-.icon-xmr-testnet::before {
-  content: "\e9b2";
-}
-
 .icon-xpm::before {
   content: "\e9b3";
 }
@@ -1259,10 +1091,6 @@
 }
 
 .icon-zec::before {
-  content: "\e9b9";
-}
-
-.icon-zec-testnet::before {
   content: "\e9b9";
 }
 

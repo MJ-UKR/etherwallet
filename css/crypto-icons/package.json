@@ -1,27 +1,33 @@
 {
-  "_from": "crypto-icons@^1.0.10",
-  "_id": "crypto-icons@1.0.65",
+  "_args": [
+    [
+      "crypto-icons@1.0.35",
+      "/home/yograterol/ClassicEtherWallet"
+    ]
+  ],
+  "_development": true,
+  "_from": "crypto-icons@1.0.35",
+  "_id": "crypto-icons@1.0.35",
   "_inBundle": false,
-  "_integrity": "sha512-ioS4jw4c84ujafj4TeV196zELiMPSlVETa6uxTMDXIjNShcMyMRVa+39BZq6xpHXA+9jQMqa29p8sOosd1rwWQ==",
+  "_integrity": "sha512-DE24vrspqYEZNREjuJckCkxCVK/XOZgogAPVve9kX/fERspMQ+rGQL2voaEj7irNsKrcsr7gUumt+Aut2luWtg==",
   "_location": "/crypto-icons",
   "_phantomChildren": {},
   "_requested": {
-    "type": "range",
+    "type": "version",
     "registry": true,
-    "raw": "crypto-icons@^1.0.10",
+    "raw": "crypto-icons@1.0.35",
     "name": "crypto-icons",
     "escapedName": "crypto-icons",
-    "rawSpec": "^1.0.10",
+    "rawSpec": "1.0.35",
     "saveSpec": null,
-    "fetchSpec": "^1.0.10"
+    "fetchSpec": "1.0.35"
   },
   "_requiredBy": [
     "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/crypto-icons/-/crypto-icons-1.0.65.tgz",
-  "_shasum": "ac1e909ac1b760ca70a9720a06ecd1b2cca6ae4b",
-  "_spec": "crypto-icons@^1.0.10",
-  "_where": "/home/yograterol/projects/ClassicEtherWallet",
+  "_resolved": "https://registry.npmjs.org/crypto-icons/-/crypto-icons-1.0.35.tgz",
+  "_spec": "1.0.35",
+  "_where": "/home/yograterol/ClassicEtherWallet",
   "author": {
     "name": "Guarda co"
   },
@@ -29,7 +35,6 @@
     "url": "https://github.com/guardaco/crypto-icons/issues",
     "email": "hello@guarda.co"
   },
-  "bundleDependencies": false,
   "contributors": [
     {
       "name": "Din Tores",
@@ -37,11 +42,10 @@
       "url": "https://github.com/dintores"
     }
   ],
-  "deprecated": false,
   "description": "Guarda is glad to present our set of icons for various cryptocurrencies and tokens that can be downloaded and used completely for free.",
   "devDependencies": {
-    "stylelint": "12.0.0",
-    "stylelint-config-standard": "19.0.0"
+    "stylelint": "10.0.1",
+    "stylelint-config-standard": "18.3.0"
   },
   "homepage": "https://guarda.co/",
   "keywords": [
@@ -61,5 +65,5 @@
   "scripts": {
     "lint": "stylelint *.css"
   },
-  "version": "1.0.65"
+  "version": "1.0.35"
 }
